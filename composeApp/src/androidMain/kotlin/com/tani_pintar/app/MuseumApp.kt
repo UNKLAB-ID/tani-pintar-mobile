@@ -1,7 +1,7 @@
-package com.jetbrains.kmpapp
+package com.tani_pintar.app
 
 import android.app.Application
-import com.jetbrains.kmpapp.di.initKoin
+import com.tani_pintar.app.di.initKoin
 
 class MuseumApp : Application() {
     override fun onCreate() {

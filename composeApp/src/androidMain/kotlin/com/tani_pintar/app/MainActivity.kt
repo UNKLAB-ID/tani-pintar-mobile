@@ -1,4 +1,4 @@
-package com.jetbrains.kmpapp
+package com.tani_pintar.app
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

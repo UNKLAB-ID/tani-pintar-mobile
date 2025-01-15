@@ -1,12 +1,12 @@
-package com.jetbrains.kmpapp.di
+package com.tani_pintar.app.di
 
-import com.jetbrains.kmpapp.data.InMemoryMuseumStorage
-import com.jetbrains.kmpapp.data.KtorMuseumApi
-import com.jetbrains.kmpapp.data.MuseumApi
-import com.jetbrains.kmpapp.data.MuseumRepository
-import com.jetbrains.kmpapp.data.MuseumStorage
-import com.jetbrains.kmpapp.screens.detail.DetailViewModel
-import com.jetbrains.kmpapp.screens.list.ListViewModel
+import com.tani_pintar.app.data.InMemoryMuseumStorage
+import com.tani_pintar.app.data.KtorMuseumApi
+import com.tani_pintar.app.data.MuseumApi
+import com.tani_pintar.app.data.MuseumRepository
+import com.tani_pintar.app.data.MuseumStorage
+import com.tani_pintar.app.screens.detail.DetailViewModel
+import com.tani_pintar.app.screens.list.ListViewModel
 import io.ktor.client.HttpClient
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
 import io.ktor.http.ContentType

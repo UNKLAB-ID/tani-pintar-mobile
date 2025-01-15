@@ -1,4 +1,4 @@
-package com.jetbrains.kmpapp.data
+package com.tani_pintar.app.data
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob

@@ -1,4 +1,4 @@
-package com.jetbrains.kmpapp.screens.detail
+package com.tani_pintar.app.screens.detail
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.foundation.background
@@ -35,18 +35,18 @@ import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil3.compose.AsyncImage
-import com.jetbrains.kmpapp.data.MuseumObject
-import com.jetbrains.kmpapp.screens.EmptyScreenContent
-import kmp_app_template.composeapp.generated.resources.Res
-import kmp_app_template.composeapp.generated.resources.back
-import kmp_app_template.composeapp.generated.resources.label_artist
-import kmp_app_template.composeapp.generated.resources.label_credits
-import kmp_app_template.composeapp.generated.resources.label_date
-import kmp_app_template.composeapp.generated.resources.label_department
-import kmp_app_template.composeapp.generated.resources.label_dimensions
-import kmp_app_template.composeapp.generated.resources.label_medium
-import kmp_app_template.composeapp.generated.resources.label_repository
-import kmp_app_template.composeapp.generated.resources.label_title
+import com.tani_pintar.app.data.MuseumObject
+import com.tani_pintar.app.screens.EmptyScreenContent
+import tani_pintar.composeapp.generated.resources.Res
+import tani_pintar.composeapp.generated.resources.back
+import tani_pintar.composeapp.generated.resources.label_artist
+import tani_pintar.composeapp.generated.resources.label_credits
+import tani_pintar.composeapp.generated.resources.label_date
+import tani_pintar.composeapp.generated.resources.label_department
+import tani_pintar.composeapp.generated.resources.label_dimensions
+import tani_pintar.composeapp.generated.resources.label_medium
+import tani_pintar.composeapp.generated.resources.label_repository
+import tani_pintar.composeapp.generated.resources.label_title
 import org.jetbrains.compose.resources.stringResource
 import org.koin.compose.viewmodel.koinViewModel
 

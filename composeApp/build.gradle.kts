@@ -59,11 +59,11 @@ kotlin {
 }
 
 android {
-    namespace = "com.jetbrains.kmpapp"
+    namespace = "com.tani_pintar.app"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.jetbrains.kmpapp"
+        applicationId = "com.tani_pintar.app"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
