@@ -6,7 +6,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import tani_pintar.composeapp.generated.resources.Res
-import tani_pintar.composeapp.generated.resources.no_data_available
+//import tani_pintar.composeapp.generated.resources.no_data_available
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.stringResource
 
@@ -19,6 +19,6 @@ fun EmptyScreenContent(
         modifier = modifier,
         contentAlignment = Alignment.Center,
     ) {
-        Text(stringResource(Res.string.no_data_available))
+//        Text(stringResource("a"))
     }
 }

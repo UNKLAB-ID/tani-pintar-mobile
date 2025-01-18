@@ -11,8 +11,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
-import com.tani_pintar.app.screens.detail.DetailScreen
 import com.tani_pintar.app.screens.list.ListScreen
+import com.tani_pintar.app.screens.splash_screen.SplashScreen
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -28,19 +28,12 @@ fun App() {
     ) {
         Surface {
             val navController: NavHostController = rememberNavController()
-            NavHost(navController = navController, startDestination = ListDestination) {
+            NavHost(navController = navController, startDestination = "splash_screen") {
+                composable("splash_screen") { SplashScreen(navController) }
                 composable<ListDestination> {
                     ListScreen(navigateToDetails = { objectId ->
                         navController.navigate(DetailDestination(objectId))
                     })
-                }
-                composable<DetailDestination> { backStackEntry ->
-                    DetailScreen(
-                        objectId = backStackEntry.toRoute<DetailDestination>().objectId,
-                        navigateBack = {
-                            navController.popBackStack()
-                        }
-                    )
                 }
             }
         }

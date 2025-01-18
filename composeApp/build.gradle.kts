@@ -9,6 +9,7 @@ plugins {
     alias(libs.plugins.kotlinxSerialization)
 }
 
+
 kotlin {
     androidTarget {
         @OptIn(ExperimentalKotlinGradlePluginApi::class)
@@ -85,6 +86,12 @@ android {
     }
 }
 
+tasks.withType<AbstractCopyTask> {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
 dependencies {
+    implementation(libs.androidx.ui.android)
     debugImplementation(libs.androidx.compose.ui.tooling)
 }
+

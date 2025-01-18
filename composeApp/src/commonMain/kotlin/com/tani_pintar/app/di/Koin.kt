@@ -5,7 +5,6 @@ import com.tani_pintar.app.data.KtorMuseumApi
 import com.tani_pintar.app.data.MuseumApi
 import com.tani_pintar.app.data.MuseumRepository
 import com.tani_pintar.app.data.MuseumStorage
-import com.tani_pintar.app.screens.detail.DetailViewModel
 import com.tani_pintar.app.screens.list.ListViewModel
 import io.ktor.client.HttpClient
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
@@ -38,7 +37,6 @@ val dataModule = module {
 
 val viewModelModule = module {
     factoryOf(::ListViewModel)
-    factoryOf(::DetailViewModel)
 }
 
 fun initKoin() {
