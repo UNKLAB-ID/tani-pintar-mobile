@@ -1,4 +1,4 @@
-package com.tani_pintar.app.screens.splash_screen
+package com.tani_pintar.app.ui.screens.splash_screen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background

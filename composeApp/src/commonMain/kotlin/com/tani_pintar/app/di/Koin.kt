@@ -5,7 +5,7 @@ import com.tani_pintar.app.data.KtorMuseumApi
 import com.tani_pintar.app.data.MuseumApi
 import com.tani_pintar.app.data.MuseumRepository
 import com.tani_pintar.app.data.MuseumStorage
-import com.tani_pintar.app.screens.list.ListViewModel
+import com.tani_pintar.app.ui.screens.list.ListViewModel
 import io.ktor.client.HttpClient
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
 import io.ktor.http.ContentType

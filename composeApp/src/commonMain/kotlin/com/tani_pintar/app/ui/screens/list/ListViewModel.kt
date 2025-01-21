@@ -1,4 +1,4 @@
-package com.tani_pintar.app.screens.list
+package com.tani_pintar.app.ui.screens.list
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

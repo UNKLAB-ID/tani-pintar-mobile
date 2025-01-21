@@ -1,4 +1,4 @@
-package com.tani_pintar.app.screens.list
+package com.tani_pintar.app.ui.screens.list
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.foundation.background
@@ -29,7 +29,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil3.compose.AsyncImage
 import com.tani_pintar.app.data.MuseumObject
-import com.tani_pintar.app.screens.EmptyScreenContent
+import com.tani_pintar.app.ui.screens.EmptyScreenContent
 import org.koin.compose.viewmodel.koinViewModel
 
 @Composable
@@ -46,7 +46,7 @@ fun ListScreen(
                 onObjectClick = navigateToDetails,
             )
         } else {
-            EmptyScreenContent(Modifier.fillMaxSize())
+//            EmptyScreenContent()
         }
     }
 }

@@ -9,6 +9,9 @@ plugins {
     alias(libs.plugins.kotlinxSerialization)
 }
 
+configurations.all {
+    exclude(group = "com.google.guava", module = "listenablefuture")
+}
 
 kotlin {
     androidTarget {
@@ -92,6 +95,11 @@ tasks.withType<AbstractCopyTask> {
 
 dependencies {
     implementation(libs.androidx.ui.android)
+    implementation(libs.androidx.compiler)
     debugImplementation(libs.androidx.compose.ui.tooling)
+    debugImplementation(libs.androidx.ui.test.manifest)
+
+    // Add Custom Previews
+    debugImplementation(libs.androidx.ui.tooling.preview.v176)
 }
 

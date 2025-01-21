@@ -11,9 +11,12 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
-import com.tani_pintar.app.screens.list.ListScreen
-import com.tani_pintar.app.screens.splash_screen.SplashScreen
+import com.tani_pintar.app.ui.screens.EmptyScreenContent
+import com.tani_pintar.app.ui.screens.list.ListScreen
+import com.tani_pintar.app.ui.screens.splash_screen.SplashScreen
 import kotlinx.serialization.Serializable
+import org.jetbrains.compose.ui.tooling.preview.Preview
+import org.muhammadsayed.bookstorecmp.theme.AppTheme
 
 @Serializable
 object ListDestination
@@ -23,13 +26,12 @@ data class DetailDestination(val objectId: Int)
 
 @Composable
 fun App() {
-    MaterialTheme(
-        colorScheme = if (isSystemInDarkTheme()) darkColorScheme() else lightColorScheme()
-    ) {
+    AppTheme {
         Surface {
             val navController: NavHostController = rememberNavController()
-            NavHost(navController = navController, startDestination = "splash_screen") {
+            NavHost(navController = navController, startDestination = "empty_screen") {
                 composable("splash_screen") { SplashScreen(navController) }
+                composable("empty_screen") { EmptyScreenContent(navController) }
                 composable<ListDestination> {
                     ListScreen(navigateToDetails = { objectId ->
                         navController.navigate(DetailDestination(objectId))

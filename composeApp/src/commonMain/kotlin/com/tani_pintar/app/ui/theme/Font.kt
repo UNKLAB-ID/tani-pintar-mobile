@@ -1,4 +1,4 @@
-package com.tani_pintar.app.theme
+package com.tani_pintar.app.ui.theme
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.text.font.FontFamily
