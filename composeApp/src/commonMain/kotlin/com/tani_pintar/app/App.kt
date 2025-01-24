@@ -26,12 +26,17 @@ data class DetailDestination(val objectId: Int)
 
 @Composable
 fun App() {
+    PreviewComponentApp()
+}
+
+
+@Composable
+fun MainApp(){
     AppTheme {
         Surface {
             val navController: NavHostController = rememberNavController()
             NavHost(navController = navController, startDestination = "empty_screen") {
                 composable("splash_screen") { SplashScreen(navController) }
-                composable("empty_screen") { EmptyScreenContent(navController) }
                 composable<ListDestination> {
                     ListScreen(navigateToDetails = { objectId ->
                         navController.navigate(DetailDestination(objectId))
@@ -39,5 +44,15 @@ fun App() {
                 }
             }
         }
+    }
+}
+
+@Composable
+fun PreviewComponentApp() {
+    AppTheme {
+        EmptyScreenContent(
+            title = "No Internet",
+            description = "Please check your internet connection"
+        )
     }
 }

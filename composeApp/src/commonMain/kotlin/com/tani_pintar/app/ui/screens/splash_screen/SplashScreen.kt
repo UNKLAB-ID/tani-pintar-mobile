@@ -17,9 +17,6 @@ import org.jetbrains.compose.resources.InternalResourceApi
 import tani_pintar.composeapp.generated.resources.Res
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.painterResource
-import tani_pintar.composeapp.generated.resources._1
-import tani_pintar.composeapp.generated.resources.capca1
-import tani_pintar.composeapp.generated.resources.image_test
 import tani_pintar.composeapp.generated.resources.tani_pintar
 
 @OptIn(ExperimentalResourceApi::class, InternalResourceApi::class)
@@ -32,7 +29,7 @@ fun SplashScreen(navController: NavController) {
         contentAlignment = Alignment.Center
     ) {
         Image(
-            painter = painterResource(Res.drawable.capca1),
+            painter = painterResource(Res.drawable.tani_pintar),
             contentDescription = "Logo"
         )
     }

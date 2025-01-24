@@ -14,6 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.tani_pintar.app.utils.pxToSp
@@ -32,10 +33,10 @@ fun PrimaryButton(
         modifier = modifier
             .height(55.dp)
             .shadow(
-                elevation = 10.dp,
+                elevation = 8.dp,
                 shape = RoundedCornerShape(24.dp),
-                spotColor = Color(0x641B69FD),
-                ambientColor = Color(0x641B69FD),
+                spotColor = Color.Gray,
+                ambientColor = Color.Gray,
                 clip = false,
             ),
         onClick = {
@@ -53,10 +54,12 @@ fun PrimaryButton(
         Text(
             text = title,
             style = MaterialTheme.typography.titleLarge.copy(
-                fontWeight = FontWeight.W700,
+                fontWeight = FontWeight.Bold,
                  fontSize = pxToSp(18f).sp,
                 lineHeight = pxToSp(22.68f).sp
-            )
+            ),
+            textAlign = TextAlign.Center,
+            modifier = Modifier.fillMaxWidth()
         )
     }
 }
